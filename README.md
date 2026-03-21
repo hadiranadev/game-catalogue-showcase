@@ -50,12 +50,20 @@ My work focused primarily on frontend functionality, UI behavior, and user exper
 
 ## Demo / Screenshots
 
+### Authentication (Sign-Up / Login)
+Users can authenticate via Google with separate login and sign-up flows.
 ![Sign-Up & Login Authentication](/assets/auth.gif)
 
+### Search & Filtering
+Users can search and filter via title and genres respectively.
 ![Search & Filter](/assets/filter.gif)
 
+### Game Management (Add / Edit / Delete)
+Admins can modify game entries, and add or delete games.
 ![Add/Delete/Edit](/assets/modify.gif)
 
+### Favourites & Wishlist
+Users can add games to their favourites or wishlist.
 ![Favourite/Wishlist](/assets/archive.gif)
 
 ---
