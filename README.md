@@ -1,9 +1,10 @@
-# game-catalogue-showcase
+# Game Catalogue (SvelteKit + Firebase)
 
-This repository is a **portfolio showcase** of a game catalogue web application built with **SvelteKit** and **Firebase** as part of a group academic project that simulated an Agile-style development workflow.
+A full-stack game catalogue web application featuring **authentication, role-based access control, and personalized user interactions**, built using SvelteKit and Firebase.
 
-> The original source code is maintained in a private repository due to team restrictions and to avoid exposing sensitive Firebase-related configuration.
-> This repository exists to showcase the project’s functionality, interface, architecture, and my contributions.
+This project was developed in a team environment with an Agile-style workflow, with a strong focus on **UI consistency, user experience, and scalable feature design**.
+
+> Note: The full source code is private due to team and Firebase configuration constraints. This repository showcases functionality, architecture, and key contributions.
 
 ---
 
@@ -26,45 +27,72 @@ It includes Google authentication, role-based access control, and dynamic UI beh
 
 ## Features
 
-- Google-based user authentication with separate sign-up and login flows.
-- Role-based access control for admin and standard user behavior.
-- CRUD functionality for game catalogue entries.
-- Interactive UI components, including modals and game detail views.
-- Responsive layout styled with TailwindCSS and DaisyUI.
-- User-specific favourites and wishlist functionality separated from the main catalogue.
+- **Google Authentication**
+  - Secure login using Firebase Authentication
+  - Separate login and sign-up flows for improved UX
+
+- **Role-Based Access Control**
+  - Admin vs standard user behavior
+  - Admin-only actions such as editing, deleting, and hiding games
+
+- **Game Catalogue System**
+  - Create, edit, delete, and view game entries
+  - Dynamic UI updates backed by Firestore
+
+- **Hidden Game System**
+  - Admins can hide/unhide games from the public catalogue
+  - Visibility dynamically changes based on user role
+
+- **Favourites & Wishlist**
+  - User-specific collections stored in Firestore
+  - Separate views from the main catalogue
+
+- **Recommendation System**
+  - Heuristic-based recommendations using:
+    - Title similarity (sequels/prequels)
+    - Shared companies
+    - Genre overlap
+
+- **Responsive UI**
+  - Built with TailwindCSS and DaisyUI
+  - Modal-based interaction and detailed game views
 
 ---
 
 ## My Contributions
 
-My work focused primarily on frontend functionality, UI behavior, and user experience. In particular, I contributed to:
+I primarily owned **frontend development, UI behavior, and user experience design**.
 
-- Refining the authentication flow by separating sign-up and login behavior for a clearer user experience.
-- Building and styling frontend components using TailwindCSS and DaisyUI.
-- Designing and implementing interactive interface elements such as modals and detailed game views.
-- Connecting frontend UI behavior to Firebase services for authentication and data-driven updates.
-- Adding favourites and wishlist functionality and separating those views from the main catalogue interface.
-- Improving interface consistency, usability, and general presentation across core screens.
+Key contributions include:
+
+- Designed and implemented core UI components using SvelteKit, TailwindCSS, and DaisyUI
+- Built dynamic modals and detailed game view interfaces
+- Integrated frontend logic with Firebase Authentication and Firestore
+- Implemented favourites and wishlist systems with user-specific data handling
+- Developed and refined authentication flows for clearer user interaction
+- Contributed to role-based UI behavior (admin vs standard user)
+- Improved consistency and usability across major application screens
+- Contributed to recommendation system logic and presentation
+
+I also played a key role in **polishing the interface and ensuring feature cohesion across the application**.
 
 ---
 
-## Demo / Screenshots
+## Highlights
 
-### Authentication (Sign-Up / Login)
-Users can authenticate via Google with separate login and sign-up flows.
-![Sign-Up & Login Authentication](/assets/auth.gif)
+- Role-based system with admin-only controls
+- Personalized user data (favourites & wishlist)
+- Heuristic recommendation engine
+- Clean, responsive UI with consistent interaction patterns
+- Full integration with Firebase (Auth + Firestore)
 
-### Search & Filtering
-Users can search and filter via title and genres respectively.
-![Search & Filter](/assets/filter.gif)
+--- 
 
-### Game Management (Add / Edit / Delete)
-Admins can modify game entries, and add or delete games.
-![Add/Delete/Edit](/assets/modify.gif)
+## Demo
 
-### Favourites & Wishlist
-Users can add games to their favourites or wishlist.
-![Favourite/Wishlist](/assets/archive.gif)
+Showcases authentication, role-based viewing and permissions, expanded game view with related titles and reviewing games, and administrative controls (e.g., add, edit, delete, hide/unhide).
+
+![Full Demo](/assets/Demo.mp4)
 
 ---
 
@@ -78,7 +106,7 @@ Users can add games to their favourites or wishlist.
 
 ---
 
-## Key Takeaways
+## What I Learned
 
 - Built experience working with a backend-as-a-service architecture using Firebase.
 - Improved my understanding of authentication flows, role-based UI behavior, and frontend-to-database integration.
